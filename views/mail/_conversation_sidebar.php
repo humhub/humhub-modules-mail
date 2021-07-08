@@ -18,7 +18,7 @@ $filterModel = new InboxFilterForm();
 <div id="mail-conversation-overview" class="panel panel-default">
     <div class="panel-heading"  style="background-color:<?= $this->theme->variable('background-color-secondary')?>">
         <a data-action-click="mail.inbox.toggleInbox">
-            <strong><span class="visible-xs-inline"><?=Icon::get('bars')?></span> <?= Yii::t('MailModule.views_mail_index', 'Conversations') ?></strong>
+            <strong><span class="visible-xs-inline"><?= Icon::get('bars')?></span> <?= Yii::t('MailModule.views_mail_index', 'Conversations') ?></strong>
         </a>
         <?php if($canStartConversation) : ?>
             <?= NewMessageButton::widget(['label' => Yii::t('MailModule.base', '+ Message'), 'right' => true, 'icon' => false, 'cssClass' => 'hidden-xs'])?>
